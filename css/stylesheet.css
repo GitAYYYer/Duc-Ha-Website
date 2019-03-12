@@ -56,3 +56,35 @@ h1 {
     height: 300px;
     width: 300px;
 }
+
+/* Above CSS is for picture and info box, below is for the drop down files */
+
+.dropdown {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: "Arimo";
+}
+
+#resume {
+    color: white;
+    background-color: #fca820;
+}
+
+#email {
+    color: white;
+    background-color: #20b255;
+}
+
+#github {
+    color: white;
+    background-color: #24292e;
+}
+
+#linkedin {
+    color: white;
+    background-color: #0077B5;
+}
