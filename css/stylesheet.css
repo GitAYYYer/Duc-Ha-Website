@@ -1,0 +1,58 @@
+@-ms-viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@-o-viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
+html {
+    background-color: #edf3ff;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 833px;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Montserrat";
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+#info {
+    margin: 20px;
+    min-width: 260px;
+    max-width: 489px;
+}
+
+#summary {
+    font-family: "Arimo";
+    font-size: 20px;
+}
+
+#image {
+    width: 304px;
+}
+
+#image img {
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+}
