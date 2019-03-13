@@ -35,7 +35,7 @@ html {
 @keyframes transitionFromTop {
     from {
       opacity: 0;
-      -webkit-transform: translateY(-350px);    /* always include webkit.. */
+      -webkit-transform: translateY(-350px);
     }
     to {
       opacity: 1;
