@@ -132,7 +132,7 @@ h1 {
 .linkImage {
     width: 40px;
     height: auto;
-    margin: 0px 7px 7px 7px;
+    margin-bottom: 7px;
 }
 
 /* Styling anchors */
