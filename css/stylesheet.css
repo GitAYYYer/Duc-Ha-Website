@@ -33,11 +33,11 @@ html {
 }
 
 @keyframes transitionFromTop {
-    0% {
+    from {
       opacity: 0;
       -webkit-transform: translateY(-100px);    /* always include webkit.. */
     }
-    100% {
+    to {
       opacity: 1;
       -webkit-transform: translateY(0);
     }
@@ -79,11 +79,11 @@ h1 {
 }
 
 @keyframes transitionFromBottom {
-    0% {
+    from {
         opacity: 0;
         -webkit-transform: translateY(200px);
     }
-    100% {
+    to {
         opacity: 1;
         -webkit-transform: translateY(0);
     }
@@ -95,6 +95,7 @@ h1 {
     border-radius: 10px;
     font-size: 20px;
     font-family: "Arimo";
+    margin: 20px auto auto 20px;
 }
 
 #resume {
@@ -129,6 +130,7 @@ h1 {
 .linkImage {
     width: 40px;
     height: auto;
+    margin: 0px 7px 7px 7px;
 }
 
 /* Styling anchors */
