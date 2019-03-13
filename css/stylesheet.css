@@ -28,6 +28,21 @@ html {
     text-align: center;
 }
 
+.top-container {
+    animation: 1s ease-in transitionFromTop;
+}
+
+@keyframes transitionFromTop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-100px);    /* always include webkit.. */
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+
 h1 {
     font-family: "Montserrat";
     margin-top: 0px;
@@ -59,32 +74,66 @@ h1 {
 
 /* Above CSS is for picture and info box, below is for the drop down files */
 
+.bottom-container {
+    animation: 1s ease-in transitionFromBottom;
+}
+
+@keyframes transitionFromBottom {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
 .links {
     width: 150px;
-    margin-left: auto;
-    margin-right: auto;
     border: 2px solid none;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Arimo";
 }
 
 #resume {
-    color: white;
-    background-color: #fca820;
+    color: #fca820;
+    border: 2px solid #fca820;
 }
 
 #email {
-    color: white;
-    background-color: #20b255;
+    color: #20b255;
+    border: 2px solid #20b255;
 }
 
 #github {
-    color: white;
-    background-color: #24292e;
+    color: #24292e;
+    border: 2px solid #24292e;
 }
 
 #linkedin {
-    color: white;
-    background-color: #0077B5;
+    color: #0077B5;
+    border: 2px solid #0077B5;
+}
+
+#resume:hover, #email:hover, #github:hover, #linkedin:hover {
+    transform: scale(1.3, 1.3);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.linkImage {
+    width: 40px;
+    height: auto;
+}
+
+/* Styling anchors */
+.aStyle {
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
 }
